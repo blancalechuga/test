@@ -1,0 +1,47 @@
+/*var rectPath = new Rect(0,0,150,150)
+.attr({
+    fillColor: 'red',
+    strokeColor: 'green',
+    strokeWidth: 5,
+    x: 150,
+    y: 150
+    
+});
+
+stage.addChild(rectPath);
+
+rectPath.animate('2s', {
+
+    rotation: Math.PI*2
+
+},{
+    easing: 'elasticInOut'
+})*/
+
+new Rect(10, 10, 100, 100)
+.addTo(stage)
+.attr(`fillColor`, `red`)
+.animate(new KeyframeAnimation('3s',{
+    '0%':{x:0, y:0},
+    '50%':{x:200, y:0},
+    '100%':{x:0, y:0}
+}));
+
+new Rect(10, 10, 100, 100)
+.addTo(stage)
+.attr(`fillColor`, `green`)
+.animate(new KeyframeAnimation('3s',{
+    '0%':{x:0, y:0},
+    '50%':{x:100, y:100},
+    '100%':{x:0, y:0},
+    
+}));
+
+new Rect(10,10,100,100)
+.addTo(stage)
+.attr(`fillColor`, `yellow`)
+.animate(new KeyframeAnimation('3s',{
+    '0%':{x:100, y:100},
+    '50%':{x:0, y:100},
+    '100%':{x:100, y:100}
+}))
