@@ -64,7 +64,7 @@
         scene.add(mesh);
     })  
     /*sillas*/
-    /*aciento1*/
+    /*asiento1*/
     loader.load('public/blanco.jpg', function(texture){
         let geometry = new THREE.CubeGeometry(10, 3, 10, 100, 1, false)
         let material = new THREE.MeshBasicMaterial({
@@ -78,7 +78,7 @@
         mesh.castShadow = true;
         scene.add(mesh);
     }) 
-    /*respaldadero1*/
+    /*respaldo1*/
     loader.load('public/mesa.jpg', function(texture){
         let geometry = new THREE.CubeGeometry(1, 10, 10, 100, 1, false)
         let material = new THREE.MeshBasicMaterial({
